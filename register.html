@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style type="text/css">
+body {
+	background-image: url("Image/ticket.jpg");
+	background-size: 100% 750px;
+}
+
+.contain h1 {
+	color: black;
+}
+
+.contain {
+	border-radius: 20px;
+	width: 300px;
+	height: 450px;
+	background-color: grey;
+	text-align: center;
+	color: #e73c3c;
+	margin-left: 40%;
+	margin-top: 6%;
+}
+
+.contain .text {
+	position: relative;
+	top: 7%;
+}
+
+.inp1 {
+	border: none;
+	border-radius: 20px;
+	background-color: white;
+	border-bottom: 2px solid white;
+	width: 250px;
+	font-size: 20px;
+	margin-top: 10px;
+	outline: none;
+	color: black;
+}
+
+.inp2 {
+	border: none;
+	border-radius: 20px;
+	background-color: white;
+	border-bottom: 2px solid white;
+	width: 250px;
+	font-size: 20px;
+	margin-top: 30px;
+	outline: none;
+	color: black;
+}
+
+.inp3 {
+	border: none;
+	border-radius: 20px;
+	background-color: white;
+	border-bottom: 2px solid white;
+	width: 250px;
+	font-size: 20px;
+	margin-top: 35px;
+	outline: none;
+	color: black;
+}
+
+.inp4 {
+	border: none;
+	border-radius: 20px;
+	background-color: white;
+	border-bottom: 2px solid white;
+	width: 250px;
+	font-size: 20px;
+	margin-top: 30px;
+	outline: none;
+	color: black;
+}
+
+.inp6 {
+	border: none;
+	border-radius: 20px;
+	background-color: white;
+	border-bottom: 2px solid white;
+	width: 250px;
+	font-size: 20px;
+	margin-top: 30px;
+	outline: none;
+	color: black;
+}
+
+button {
+	width: 250px;
+	height: 44px;
+	background-color: black;
+	color: white;
+	border: none;
+	font-size: 15px;
+	border-radius: 20px;
+	margin-top: 20px;
+	cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+
+	<form action="register">
+		<div class="contain">
+			<div class="text">
+				<h1>REGISTER</h1>
+				<input class="inp1" type="text" placeholder="FirstName" name="fname"
+					required="required"> <input class="inp2" type="text"
+					placeholder="LastName" name="lastname" required="required">
+				<input class="inp3" type="text" placeholder="Phone NO." name="phone"
+					required="required"> <input class="inp4" type="text"
+					placeholder="Email" name="email" required="required"> <input
+					class="inp6" type="password" placeholder="Password" name="password" id="myInput"
+					required="required" > <br>
+					<input type="checkbox" onclick="myFunction()"><!-- Show Password -->
+				<button>Submit</button>
+			</div>
+		</div>
+	</form>
+	<!-- show password code -->
+<script>
+function myFunction() {
+  var x = document.getElementById("myInput");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+</script>
+
+</body>
+</html>

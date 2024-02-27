@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>booking Ticket</title>
+<style>
+body {
+	background-image: url("Image/pic5.jpg");
+	background-size: 100% 700px;
+}
+
+.contain h1 {
+	color: aqua;
+}
+
+.contain {
+	border-radius: 20px;
+	width: 300px;
+	height: 400px;
+	background-color: black;
+	background: rgba(0, 0, 0, 0.4);
+	text-align: center;
+	color: #e73c3c;
+	margin-left: 38%;
+	margin-top: 7%;
+}
+
+.contain .text {
+	position: relative;
+	top: 7%;
+}
+
+.inp1 {
+	border: none;
+	border-radius: 10px;
+	background-color: rgba(0, 0, 0, 0.5);
+	border-bottom: 2px solid white;
+	width: 250px;
+	font-size: 20px;
+	margin-top: 5px;
+	outline: none;
+	color: white;
+}
+
+.inp2 {
+	border: none;
+	border-radius: 10px;
+	background-color: rgba(0, 0, 0, 0.5);
+	border-bottom: 2px solid white;
+	width: 250px;
+	font-size: 20px;
+	margin-top: 10px;
+	outline: none;
+	color: white;
+}
+
+.inp3 {
+	width: 200px;
+	height: 40px;
+	background-color: coral;
+	border: none;
+	font-size: 20px;
+	border-radius: 20px;
+	margin-top: 20px;
+	cursor: pointer;
+}
+
+button {
+	width: 250px;
+	height: 44px;
+	background-color: coral;
+	color: black;
+	border: none;
+	font-size: 22px;
+	border-radius: 25px;
+	margin-top: 5px;
+	cursor: pointer;
+	color: black;
+}
+
+
+.contain .text{
+	color: aqua;
+	font-size:17px;
+	}
+</style>
+</head>
+<body>
+	<form action="LoginServletTest">
+		<div class="contain">
+			<div class="text">
+				<h1>Login</h1>
+				<input class="inp1" type="text" placeholder="UserName" name="fname" id="123"
+					required="required"> <input class="inp2" type="password"
+					placeholder="Password" name="password"  required="required"
+					id="myInput"> <br> <br>
+				<!-- show password -->
+				<input type="checkbox" onclick="myFunction()">Show Password
+				<br> <a href="link.html"><input class="inp3" type="button"
+					value="Back"></a>
+					<br><br>
+				<button>SignIn</button>
+
+			</div>
+		</div>
+	</form>
+	<!-- show password code -->
+	<script>
+		function myFunction() {
+			var x = document.getElementById("myInput");
+			if (x.type === "password") {
+				x.type = "text";
+			} else {
+				x.type = "password";
+			}
+		}
+	</script>
+	<script>
+	
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+body {
+	background-image: url("Image/strangerthings.jpg");
+	background-size: 100%;
+	margin-top: 0%;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+	width: 100%;
+	background-color: #555;
+	overflow: auto;
+	background: rgba(0, 0, 0, 0.4);
+	text-align: center; 
+	
+}
+
+.navbar a {
+	 display: inline-block; 
+	padding: 20px;
+	color: white;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+.navbar a:hover {
+	background-color: #000;
+}
+
+.active {
+	background-color: grey;
+}
+
+@media screen and (max-width: 500px) {
+	.navbar a {
+		float: none;
+		display: block;
+	}
+}
+</style>
+
+</head>
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar">
+				<a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a>
+				<a href="login.html"><i class="fa fa-fw fa-search"></i>Login</a> <a
+					href="adminLogin.jsp"><i class="fa fa-fw fa-envelope"></i>Admin</a> <a
+					href="register.html"><i class="fa fa-fw fa-user"></i> Register</a>
+			</div>
+		</div>
+	</nav>
+</body>
+</html>
+
+
